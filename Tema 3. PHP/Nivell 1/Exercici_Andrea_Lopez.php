@@ -41,11 +41,32 @@
     echo $nom; 
     echo "<h1><strong>" .NOM. "</strong></h1>";
 
+    //Exercici4- Declara dues variables X i Y de tipus int, dues variables N i M de tipus double i assigna a cadascuna un valor.
+    $X = 10;
+    $Y = 20;
+    echo "Valor d'X: " .$X. ". Valor d'Y: " .$Y. ".";
+    echo "Suma: " .($X+$Y);
+    echo "Resta: " .($X-$Y);
+    echo "Producte: " .($X*$Y);
+    echo "Divisió: " .($X/$Y);
+    echo "Mòdul: " .($X%$Y);
+    
+    $N = 25.5;
+    $M = 35.5;
+    echo "Valor d'N: " .$N. ". Valor d'M: " .$M. ".";
+    echo "Suma: " .($N+$M);
+    echo "Resta: " .($N-$M);
+    echo "Producte: " .($N*$M);
+    echo "Divisió: " .($N/$M);
+    echo "Mòdul: " .($N%$M);
 
+    echo "Doble d'X: " .($X*2);
+    echo "Doble d'Y: " .($Y*2);
+    echo "Doble d'N: " .($N*2);
+    echo "Doble d'M: " .($M*2);
 
-
-
-
+    echo "Suma total: " .($X+$Y+$N+$M);
+    echo "Producte total: " .($X*$Y*$N*$M);
 
 
 
