@@ -68,6 +68,20 @@
     echo "Suma total: " .($X+$Y+$N+$M);
     echo "Producte total: " .($X*$Y*$N*$M);
 
+    //Exercici5- Crea dos arrays, un que inclogui 5 integers, i un altre que inclogui 3 integers.
+    $array1 = [1,2,3,4,5];
+    $array2 = [6,7,8];
+
+    //Afegeix un valor més a l'array que conté 3 integers.
+    $array2[]= 9;
+
+    //Mescla els dos arrays i imprimeix la mida de l'array resultant per pantalla.
+    $mesclaArrays = array_merge($array1,$array2);
+    echo "Mida del array conjunt: " .count($mesclaArrays);
+    var_dump($mesclaArrays);
+
+    //Ara imprimeix per pantalla l'array resultant valor a valor.
+    print_r($mesclaArrays);
 
 
 
