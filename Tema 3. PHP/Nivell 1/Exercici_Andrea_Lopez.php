@@ -36,6 +36,13 @@
     $informacio = "Aquest és el curs de PHP";
     echo $salutacio . $informacio; 
 
+    //Exercici3-Crea una constant que contingui el teu nom i l'imprimeixi per pantalla. Has d'imprimir-la amb format de títol i lletra en negreta en HTML.
+    define("NOM","Andrea", true);
+    echo $nom; 
+    echo "<h1><strong>" .NOM. "</strong></h1>";
+
+
+
 
 
 
