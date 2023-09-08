@@ -30,7 +30,7 @@
 
     //Exercici3-Imagina't que volem que compti fins a un nombre diferent de 10. Programa la funció perquè el final del compte estigui parametritzat.
 
-    function amagatall2($final = 20){
+    function amagatall2($final){
         $i = 0;
         while ($i <= $final){
             echo $i;
@@ -38,6 +38,7 @@
         }
     }
 
+    
 
 
 
