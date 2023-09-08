@@ -38,6 +38,16 @@
         }
     }
 
+    //Exercici4-Per prevenir oblits establirem un paràmetre per defecte igual a 10 a la funció que s'encarrega de fer aquest compte.
+   
+    function amagatall3($final = 10){
+        $i = 0;
+        while ($i <= $final){
+            echo $i;
+            $i += 2;
+        }
+    }
+
     
 
 
