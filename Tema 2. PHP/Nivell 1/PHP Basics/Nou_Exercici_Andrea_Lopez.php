@@ -28,7 +28,8 @@ echo "Escribim el missage al invers: " .$salutacioInversa;
 $informacio = "Aquest és el curs de PHP";
 echo $salutacio . $informacio; 
 
-//Exercici3- Declara dues variables X i Y de tipus int, dues variables N i M de tipus double i assigna a cadascuna un valor.
+//Exercici3-
+//a) Declara dues variables X i Y de tipus int, dues variables N i M de tipus double i assigna a cadascuna un valor.
 $X = 10;
 $Y = 20;
 echo "Valor d'X: " .$X. ". Valor d'Y: " .$Y. ".";
@@ -54,3 +55,27 @@ echo "Doble d'M: " .($M*2);
 
 echo "Suma total: " .($X+$Y+$N+$M);
 echo "Producte total: " .($X*$Y*$N*$M);
+
+//b)Crea una funció Calculadora que entri dos nombres per paràmetre, i en un tercer paràmetre et permeti fer la suma, la resta, la multiplicació o la divisió dels dos nombres.
+function Calculadora ($Nombre1, $Nombre2, $operacio){
+$Nombre1 = readline ("Digues el primer nombre:");
+$Nombre2 = readline ("Digues el segon nombre:");
+$operacio = readline ("Indica l'operació a realitzar:");
+
+    switch ($operacio){
+        case "suma":
+            return $Nombre1+$Nombre1;
+        case "resta":
+            return $Nombre1-$Nombre2;
+        case "multiplicacio":
+            return $Nombre1*$Nombre1;
+        case "divisio":
+            return $Nombre1/$Nombre2;
+        default: 
+            echo "operacio no valida";
+    }
+}
+
+
+
+?>
