@@ -11,18 +11,19 @@
 
     function grau($nota){
         if ($nota >= 60){
-            echo "Primera Divisió";
+            return "Primera Divisió";
         }else if ( $nota >= 45 && $nota <= 59){
-            echo "Segona Divisió";
+            return "Segona Divisió";
         }else if ( $nota >= 33 && $nota <= 44){
-            echo "Tercera Divisió";
-        }else if ( $nota <= 33){
-            echo "L'estudiant reaprovarà";
+            return "Tercera Divisió";
+        }else if ( $nota < 33){
+            return "L'estudiant reaprovarà";
         }else{
-            echo "Ha hagut algun error";
+            return "Ha hagut algun error";
         }
     }
     
-    grau(43)."\n";
+    echo grau(43)."\n";
         
+
 ?>
