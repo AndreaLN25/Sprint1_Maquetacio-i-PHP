@@ -1,4 +1,4 @@
-    <?
+    <?php
 //Exercici 1- 
 /*Crea una classe Employee, defineix com a atributs el seu nom i sou.
 Definir un mètode initialize que rebi com a paràmetres el nom i sou. 
@@ -11,31 +11,25 @@ class Employee {
     private $sou;
 
 
-    function initialize($nom,$sou){
+    function initialize($nom,$sou) {
         $this->nom = $nom;
         $this->sou = $sou;
 
-       /* echo $this->nom;
-        echo $this->sou;*/
     }
 
-    function print(){
+    function __toString(){
         if ($this->sou > 6000){
-            $missatge = "Hauràs de pagar impostos";
-        } else{
-            $missatge = "No pagaràs impostos";
+            return " hola, $this->nom, Hauràs de pagar impostos";
+        }else{
+            return " hola, $this->nom, No pagaràs impostos";
         }
-
-        echo $missatge;
     }
 }
 
 
-
-
-$Empleat1 = new Employee();
-$Empleat1->initialize("Andrea", 10000);
-$Empleat1->print();
+$Empleat1 = new Employee;
+$Empleat1 ->initialize("Andrea", 10000);
+echo $Empleat1->__toString();
 
 
     ?>
