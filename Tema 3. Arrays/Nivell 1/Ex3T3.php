@@ -5,12 +5,24 @@ La funció ens retorna true si totes les paraules de l’array tenen el caràcte
 Per exemple: Si tenim [“hola”, “Php”, “Html”] retornarà true si preguntem per “h” però fals si preguntem per “l”.*/
 echo "\n Exercici 3: \n";
 
-function verificarCaracter($array,$character){
-    foreach($array as $paraules){
+function conteCaracter($paraules,$caracter):bool{
+    foreach($paraules as $paraula){
+        if (strpos($paraula, $caracter) === false){
+            return false;
+        }
     }
+    return true; 
 }
 
 
+$paraules = ["hola", "Php", "html"];
+$caracter = "h";
+
+if (conteCaracter($paraules, $caracter)) {
+    echo "Totes les paraules contenen el caràcter '$caracter'.";
+} else {
+    echo "No totes les paraules contenen el caràcter '$caracter'.";
+}
 
 
 ?>
