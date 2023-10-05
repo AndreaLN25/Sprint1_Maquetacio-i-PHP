@@ -5,7 +5,7 @@ La funció ens retorna true si totes les paraules de l’array tenen el caràcte
 Per exemple: Si tenim [“hola”, “Php”, “Html”] retornarà true si preguntem per “h” però fals si preguntem per “l”.*/
 echo "\n Exercici 3: \n";
 
-function conteCaracter($paraules,$caracter):bool{
+function conteCaracter($paraules,$caracter){
     foreach($paraules as $paraula){
         if (strpos($paraula, $caracter) === false){
             return false;
