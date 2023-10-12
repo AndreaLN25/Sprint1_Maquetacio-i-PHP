@@ -13,7 +13,9 @@ echo "Mida abans d'eliminar l'element: " . count($X) . "\n";
 //eliminar element i tornar a print
 unset($X[2]);
 print_r($X);
-//reorganitzar índex-ctl-z
+//reorganitzar índex i tornar a print
+$X = array_values($X);
+print_r($X);
 
 //mida després d'eliminar un element 
 echo "Mida després d'eliminar un element: ".count($X)."\n";
