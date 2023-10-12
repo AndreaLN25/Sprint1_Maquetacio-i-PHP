@@ -9,7 +9,6 @@ class Shape{
 
     protected $amplada;
     protected $alçada;
-    protected $area;
 
     public function __construct($amplada, $alçada){
 
