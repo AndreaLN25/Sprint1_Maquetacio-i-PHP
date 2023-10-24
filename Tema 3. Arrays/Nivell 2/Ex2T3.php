@@ -10,42 +10,7 @@ $notesAlumnes = array(
     "Alumne3"=> [3,5,2,6,4],
     "Alumne4"=> [7,9,3,2,1]
 );
-/*
-function calculMitjanes($notesAlumnes){
-    $mitjanaClasse = 0;
 
-    foreach ($notesAlumnes as $alumne => $notes){
-        $mitjanaAlumne = array_sum($notes) / count($notes);
-        $mitjanaClasse += $mitjanaAlumne;
-
-        echo "Mitjana $alumne: $mitjanaAlumne \n";
-    }
-
-    $mitjanaClasse /= count($notesAlumnes);
-    echo "Mitjana de la classe: $mitjanaClasse";
-}
-
-calculMitjanes($notesAlumnes);
-
-
-function calculMitjanes($notesAlumnes){
-    $totalAlumnes= count($notesAlumnes);
-    $mitjanaClasse;
-
-    foreach ($notesAlumnes as $alumne=> $notes){
-        $mitjanaAlumne = array_sum($notes) / count($notes);
-        $mitjanaClasse += $mitjanaAlumne;
-        echo "Mitjana $alumne : $mitjanaAlumne \n";
-    }
-    $mitjanaClasse /= $totalAlumnes;
-    echo "Mitjana de la classe: $mitjanaClasse";
-
-
-}
-
-
-calculMitjanes($notesAlumnes);
-*/
 function calculMitjanes($notesAlumnes) {
     $totalNotes = 0;
     $totalAlumnes = count($notesAlumnes); 
