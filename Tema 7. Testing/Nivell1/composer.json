@@ -1,0 +1,12 @@
+{
+    "name": "andri/nivell1",
+    "require-dev": {
+        "phpunit/phpunit": "10.0"
+    },"autoload": {
+        "psr-4": {
+            "Nivell1\\Ex1T7\\": "Nivel1/Ex1T7",
+            "Nivell1\\Tests\\": "Nivel1/tests"
+        }
+    }
+
+}
