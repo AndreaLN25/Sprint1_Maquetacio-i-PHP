@@ -13,13 +13,15 @@ Sent, per tant, el total, 4.
 
 */
 
-
+define("PREU_XOCOLATES",1);
+define("PREU_XICLETS",0.5);
+define("PREU_CARAMELS",1.5);
 function compraTotal($xocolates,$xiclets,$caramels){
-    $preuXocolates=1; $preuXiclets=0.5; $preuCaramels=1.5;
+    //$preuXocolates=1; $preuXiclets=0.5; $preuCaramels=1.5;
 
-    $totalPreuXocolates = $xocolates*$preuXocolates;
-    $totalPreuXiclets = $xiclets*$preuXiclets;
-    $totalPreuCaramels = $caramels*$preuCaramels;
+    $totalPreuXocolates = $xocolates*PREU_XOCOLATES;
+    $totalPreuXiclets = $xiclets*PREU_XICLETS;
+    $totalPreuCaramels = $caramels*PREU_CARAMELS;
 
     $total = $totalPreuXocolates + $totalPreuXiclets + $totalPreuCaramels;
 
