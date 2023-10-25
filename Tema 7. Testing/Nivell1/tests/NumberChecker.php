@@ -14,6 +14,9 @@ class NumberChecker {
 	public function isPositive(): bool {
 		return $this->number > 0;
 	}
+	public function isZero(): bool {	
+		return $this->number = 0;
+	}
 
 }
 ?>
