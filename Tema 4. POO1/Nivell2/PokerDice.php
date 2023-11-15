@@ -12,13 +12,13 @@ A més, programa el mètode getTotalThrows que ha de mostrar el nombre total de 
 
 
 class PokerDice {
-    private $cares = ["As", "K", "Q", "J", 7, 8];
+    private static $cares = ["As", "K", "Q", "J", 7, 8];
     private $ultimaTiradaDau;
     private static $totalTirades = 0; 
 
     public function throwDau(){
-        $tiradaAleatoria = array_rand($this->cares,1);
-        $this->ultimaTiradaDau = $this->cares[$tiradaAleatoria];
+        $tiradaAleatoria = array_rand(self::$cares,1);
+        $this->ultimaTiradaDau = self::$cares[$tiradaAleatoria];
         self::$totalTirades++;
     }
 
